@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+@font-face {
+    font-family: "Hello Sunday";
+    src: url("/assets/font/Hello Sunday.otf");
+}
+
+@font-face {
+    font-family: "Welcome Home";
+    src: url("/assets/font/Welcome Home.otf");
+}
+
+html{
+    --wtl-text: hsl(0, 0%, 2%);
+    --wtl-background: hsl(0, 0%, 98%);
+    --wtl-primary: hsl(120, 43%, 64%);
+    --wtl-secondary: hsl(0, 0%, 89%);
+    --wtl-accent: hsl(210, 57%, 50%);
+
+    --wtl-border-primary: color-mix(in srgb, var(--wtl-primary), #000 10%);
+    --wtl-border-secondary: color-mix(in srgb, var(--wtl-secondary), #000 10%);
+    /*color-mix(in srgb, var(--wtl-secondary), #000 30%);*/
+
+    --wtl-bg: url("/assets/img/geometry2.png");
+}
+
+html.dark{
+    --wtl-text: hsl(0, 0%, 98%);
+    --wtl-text-primary: hsl(0, 0%, 2%);
+    --wtl-background: hsl(0, 0%, 6%);
+    --wtl-primary: hsl(120, 43%, 64%);
+    --wtl-secondary: hsl(240, 9%, 17%);
+    --wtl-accent: hsl(210, 57%, 70%);
+
+    --wtl-border-primary: color-mix(in srgb, var(--wtl-primary), #aaa 30%);
+    --wtl-border-secondary: color-mix(in srgb, var(--wtl-secondary), #aaa 30%);
+
+    --wtl-bg: url("/assets/img/geometry-dark.png");
+}
+
+body {
+    background-image: var(--wtl-bg);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: var(--wtl-bg)
+}
+
+.title {
+    text-align: center;
+}
+
+.wrapper {
+    display: block;
+}
+
+.item {
+    display: inline-block;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.btn-discord {
+    /*color: #7289da;*/
+    background-color: #7289da;
+}
+
+.btn-steam {
+    /*color: #1955aa;*/
+    background-color: #1955aa;
+}
+
+.btn-kofi {
+    /*color: #7289da;*/
+    background-color: #ec6866;
+}
+
+.btn-youtube {
+    /*color: #ff0000;*/
+    background-color: #ff0000;
+}
+
+.btn-github {
+    background-color: #22262c;
+}
+
+.btn-link {
+    margin: 16px;
+}
+
+/*
+button {
+    color: var(--wtl-text);
+    background-color: var(--wtl-secondary);
+    border-color: var(--wtl-border-secondary);
+}
+
+.primary-button {
+    color: var(--wtl-text-primary);
+    background-color: var(--wtl-primary);
+    border-color: var(--wtl-primary);
+    border-color: var(--wtl-border-primary);
+}
+
+.secondary-button {
+    background-color: var(--wtl-secondary);
+    color: var(--wtl-text);
+    border-color: var(--wtl-secondary);
+}
+
+.paper {
+    background-color: var(--wtl-background);
+}*/
